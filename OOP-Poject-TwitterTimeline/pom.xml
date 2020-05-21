@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>OOP-Project-Dandrea-Ripani-1</artifactId>
+	<artifactId>OOP-Poject-TwitterTimeline</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>OOP-Project-Dandrea-Ripani-1</name>
+	<name>OOP-Poject-TwitterTimeline</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

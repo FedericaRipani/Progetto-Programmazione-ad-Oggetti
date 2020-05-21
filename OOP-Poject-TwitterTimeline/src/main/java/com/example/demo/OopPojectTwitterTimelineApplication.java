@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OopProjectDandreaRipani1Application {
+public class OopPojectTwitterTimelineApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OopProjectDandreaRipani1Application.class, args);
+		SpringApplication.run(OopPojectTwitterTimelineApplication.class, args);
 	}
 
 }
