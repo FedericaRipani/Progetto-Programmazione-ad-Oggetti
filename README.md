@@ -2,4 +2,4 @@
 
 ## Diagramma UML iniziale
 
-![UML_TwitterTimeline](https://user-images.githubusercontent.com/58491641/83081774-bf5d2780-a081-11ea-833e-16de434e0c61.jpg)
+![UML OOP_Project](https://user-images.githubusercontent.com/58491641/83460644-340bd980-a467-11ea-9fa7-cdf4bd5b23f4.png)
