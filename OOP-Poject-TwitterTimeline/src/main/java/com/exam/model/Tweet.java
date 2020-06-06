@@ -121,6 +121,6 @@ public class Tweet {
 		this.hashtag = hashtag;
 	}
 	
-	
+
 	
 }
