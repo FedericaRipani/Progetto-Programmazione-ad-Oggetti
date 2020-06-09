@@ -1,4 +1,4 @@
-package com.exam.Interface;
+package com.exam.Abstract;
 
 import java.util.ArrayList;
 
