@@ -3,7 +3,7 @@ package com.exam.Filter;
 import java.util.ArrayList;
 
 import com.exam.model.*;
-import com.exam.Interface.*;
+import com.exam.Abstract.*;
 
 /**
  * Classe che implementa il filtro "Essere superiore di un certo valore" 

@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author Federica Ripani
  */
 
-import com.exam.Interface.AbstractFilter;
+import com.exam.Abstract.AbstractFilter;
 import com.exam.model.Tweet;
 
 public class Search extends AbstractFilter{

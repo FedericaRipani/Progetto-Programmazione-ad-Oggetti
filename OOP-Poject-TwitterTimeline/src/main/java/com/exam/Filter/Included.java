@@ -1,5 +1,5 @@
 package com.exam.Filter;
-import com.exam.Interface.*;
+import com.exam.Abstract.*;
 import com.exam.model.Tweet;
 
 import java.util.ArrayList;
