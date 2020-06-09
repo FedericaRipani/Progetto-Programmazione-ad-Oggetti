@@ -13,6 +13,6 @@ public abstract class AbstractStatistic {
 		}
 
 
-		public abstract int calcola(ArrayList<Tweet> vett, String field);
+		public abstract double calcola(ArrayList<Tweet> vett, String field);
 
 }
