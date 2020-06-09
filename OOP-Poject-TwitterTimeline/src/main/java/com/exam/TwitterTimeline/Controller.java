@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.exam.Database.*;
+import com.exam.Service.FilterService;
 import com.exam.model.Metadati;
 import com.exam.model.Tweet;
 
@@ -31,10 +32,14 @@ public class Controller {
 	private DatabaseMetadati meta;
 	private ArrayList<Tweet> database;
 	private ArrayList<Tweet> vett;
+	private Boolean val;
+	private FilterService filterService;
 
 
 
 	public Controller() throws IOException {
+		
+		filterService = new FilterService();
 		vett= new ArrayList<Tweet>();
 		meta = new DatabaseMetadati();
 		database = new DatabaseTweet().getAll();
@@ -66,5 +71,22 @@ public class Controller {
 	public ResponseEntity<ArrayList<Tweet>> Twit() {
 		return new ResponseEntity<ArrayList<Tweet>>(database, HttpStatus.OK);
 	
+	}
+	
+	@SuppressWarnings("rawtypes")
+	@GetMapping("/filtering")
+	public ResponseEntity filters(@RequestParam String filter) throws JSONException {
+		JSONObject filtro = new JSONObject(filter);
+		vett = filterService.filters(database, filtro);
+		val= filterService.getFlag();
+		
+		if(val==false)
+			return new ResponseEntity<String>("Nessun filtro selezionata/esistente", HttpStatus.BAD_REQUEST);
+		
+		if (vett.size() == 0)
+			return new ResponseEntity<String>("La ricerca non ha prodotto risultati", HttpStatus.NO_CONTENT);
+		else
+			return new ResponseEntity<ArrayList<Tweet>>(vett, HttpStatus.OK);
+		
 	}
 }
