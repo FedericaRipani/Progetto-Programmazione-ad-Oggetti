@@ -2,17 +2,15 @@ package com.exam.Statistic;
 
 import java.util.ArrayList;
 
-
 import com.exam.Abstract.AbstractStatistic;
+import com.exam.Service.StatsService;
 import com.exam.model.*;
 
-
-	
 public class Min extends AbstractStatistic {
 	
 	
 	public double calcola(ArrayList<Tweet> vett, String field) {
-		ArrayList<Integer> temp = new ArrayList<Integer>();
+		ArrayList<Integer> temp = new StatsService().convInt(vett, field);
 
 		if (temp.size() == 0)
 			return 0;

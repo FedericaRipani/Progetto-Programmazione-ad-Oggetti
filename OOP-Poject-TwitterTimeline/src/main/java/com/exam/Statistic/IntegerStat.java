@@ -18,6 +18,7 @@ public class IntegerStat  extends Stats{
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("Field", field);
 		map.put("Minimo", min = new Min().calcola(vett, field));
+		map.put("Media", avg = new Avg().calcola(vett, field));
 		
 		//                                      //
 		// Qui metteremo le  altre statistiche //
