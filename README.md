@@ -43,9 +43,11 @@ Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi U
 
 ## Autori
 
-Camilla D'Andrea - S1097888
 
-Federica Ripani - S1086993
+[**Federica Ripani**](https://twitter.com/RipaniFederica) - S1086993
 
+[**Camilla D'Andrea**](https://twitter.com/CamillaDAndrea2) - S1087888
 
 Studentesse del 2° anno di Ing. Informatica e dell'Automazione presso l'UNIVPM.
+
+Il link rimanda al profilo Twitter creato in occasione dello sviluppo del progetto.
