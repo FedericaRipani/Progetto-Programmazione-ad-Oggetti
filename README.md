@@ -32,6 +32,12 @@ I filtri disponibili sono riportati nella seguente tabella:
 
 ## **Struttura**
 
+Il progetto è strutturato con vari package rispettando il pattern architetturale MVC come di seguito dimostrato:
+
+<img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/Package.svg" style="zoom: 5%;" style="align: center;"/>
+
+Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi UML, si faccia riferimento a questa [cartella](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/tree/master/UML).
+
 
 
 
