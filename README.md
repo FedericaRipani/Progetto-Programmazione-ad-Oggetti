@@ -14,6 +14,20 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 ## **Pre requisiti ed avvio del progetto**
 
 
+Per il corretto funzionamento è necessario istallare l'IDE [Eclipse](https://www.eclipse.org/downloads/) con plugin "<u>Spring Tools</u>".
+
+Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare i seguenti passaggi:
+
+- Tasto destro nel Package Explorer, e cliccare "Import", poi "Project from GIT (with Smart Import)"
+
+- Copiare nella finestra che si è appena aperta l'[URL del progetto](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti)
+
+- Una volta importato, basterà selezionare il progetto nel Package Explorer, tasto destro, opzione "Run As" e scegliere "Spring Boot App"
+
+  Il progetto è dunque pronto, difatti apparirà in un console un messaggio "APPLICATION READY".
+  
+  
+
 #### **Download**
 
 Nel momento in cui si clicca su "Run as" -> "Spring Boot Application", automaticamente si effettua il download dei Tweet ed i relativi dati. Si creerà un JSONArray formato da tutti i Tweet ed i campi al loro interno.
