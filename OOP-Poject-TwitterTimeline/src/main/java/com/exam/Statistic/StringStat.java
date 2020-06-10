@@ -9,7 +9,7 @@ import org.json.JSONException;
 import com.exam.model.Tweet;
 
 
-public class StringStat extends Stats {
+public class StringStat {
 	
 	private Stats T;
 	
@@ -19,7 +19,7 @@ public class StringStat extends Stats {
 		
 		super();
 		Map<String, Object> map = new HashMap<String, Object>();
-		
+		map = new Occ().occurrence(vett, field);
 		
 		T = new Stats(map);
 	}
