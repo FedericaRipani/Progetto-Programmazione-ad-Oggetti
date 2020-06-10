@@ -5,4 +5,11 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 
 #### **Download**
 
-Nel momento in cui si clicca su "Run as" -> "Spring Boot Application", automaticamente si effettua il download dei Tweet ed i relativi dati. Si creerà un JSONArray formato da tutti i Tweet ed campi al loro interno.
+Nel momento in cui si clicca su "Run as" -> "Spring Boot Application", automaticamente si effettua il download dei Tweet ed i relativi dati. Si creerà un JSONArray formato da tutti i Tweet ed i campi al loro interno.
+
+---
+
+#### Filtri 
+I filtri disponibili sono riportati nella seguente tabella:
+!!!!!!Verificare che non siano stati invertiti i filtri UpperBound e LowerBound + specificare che del testo si considera la sua lunghezza come parametro!!!!!!
+////Metteremo tabella////
