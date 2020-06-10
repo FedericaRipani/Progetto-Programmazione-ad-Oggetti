@@ -5,4 +5,4 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 
 #### **Download**
 
-Nel momento in cui si clicca su "Run as" -> "Spring Boot Application", automaticamente si effettua il download dei Tweet ed i relativi dati. Si creerà un JSONArray formo da tutti i Tweet ed campi al loro interno.
+Nel momento in cui si clicca su "Run as" -> "Spring Boot Application", automaticamente si effettua il download dei Tweet ed i relativi dati. Si creerà un JSONArray formato da tutti i Tweet ed campi al loro interno.
