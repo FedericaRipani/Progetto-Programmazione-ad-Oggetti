@@ -17,6 +17,13 @@ public class IntegerStat {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("Field", field);
 		
+		//                             //
+		// Qui metteremo le statistiche//
+		//                             //
+		
+		T = new Stats(map);
+		
+		
 	}
 
 }
