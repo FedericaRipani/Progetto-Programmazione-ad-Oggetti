@@ -136,9 +136,17 @@ I filtri di tipo stringa sono applicabili ai campi: `TextPost`, `NameUser` e `Ha
 
 E' possibile eseguire delle statistiche su un campo.
 
-Il campo può riferirsi a tutta la Timeline di Tweet o ad una scala ridotta, quindi applicando prima un filtro.
+La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa, applicando prima un filtro.
 
-(INSERIRE TABELLA)
+|        Statistica         |                         Descrizione                          |            Field applicabili             |
+| :-----------------------: | :----------------------------------------------------------: | :--------------------------------------: |
+|       Minimo (Min)        | Dato il campo (**field**), calcola il minimo valore in quel campo |         idPost, idUser e numPost         |
+|       Massimo (Max)       | Dato il campo (**field**), calcola il massimo valore in quel campo |         idPost, idUser e numPost         |
+|        Media (Avg)        | Dato il campo (**field**), calcola la media dei valori di quel campo |         idPost, idUser e numPost         |
+|        Somma (Sum)        | Dato il campo (**field**), calcola la somma di tutti i valori di quel campo |         idPost, idUser e numPost         |
+| Deviazione Standard (Std) |                         Da vedere!!!                         |         idPost, idUser e numPost         |
+| Occorrrenze (Occ)  |      Dato il campo (**field**),  calcola le occorrenze       | data, textPost, nameUser e  languagePost |
+
 
 ##### ! TUTTI I DATI RESTITUITI SONO IN FORMATO JSON !
 ##### Esempio di risposta alla chiamata  http://localhost:8080/stats?field=numPost&filter={"type":"UpperBound","fields":"TextPost","lower":100}.
