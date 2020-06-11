@@ -101,6 +101,18 @@ Sarà possibile, d'ora in poi, effettuare delle manipolazioni e ottenere informa
 ## **Funzionamento**
 
 
+Tramite il Diagramma dei casi d'uso riportato di seguito viene spiegato quali sono le richieste  che il client può effettuare tramite API REST GET.
+
+
+<img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/Use%20Case%20Diagram.svg" style="zoom: 5%;" style="align: center;"/>
+
+
+#### Come effettuare le richieste
+
+E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad esempio Postman) che tramite richiesta all' URL http://localhost:8080/.
+
+
+
 ---
 
 #### Filtri 
