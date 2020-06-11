@@ -153,6 +153,13 @@ Il campo può riferirsi a tutta la Timeline di Tweet o ad una scala ridotta, qui
 }
 ```
 
+#### HTTP-response
+
+Al fine di rendere il progetto di maggior comprensione all'utente finale,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie bensì sono stati utilizzati dei codici HTTP- response.
+
+Il client invia la richiesta al server, quindi attende la risposta (response). L'obiettivo del server è quindi di interpretare la richiesta del client e restituire una risposta correlata da un codice ben visibile sull' applicazione di testing [Postman](https://www.postman.com/).
+
+
 
 ## **Struttura**
 
