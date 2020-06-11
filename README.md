@@ -153,6 +153,38 @@ Il campo può riferirsi a tutta la Timeline di Tweet o ad una scala ridotta, qui
 }
 ```
 
+##### Esempio di risposta parziale alla chiamata   http://localhost:8080/getTweets
+
+
+```
+ {
+        "data": "Thu Jun 11 09:11:55 +0000 2020",
+        "idPost": -677994489,
+        "textPost": "RT @JorgeGlas: \"Un pueblo empoderado abraza a sus hermanos cuando lo necesitan y así abrazamos a nuestros hermanos víctimas del terremoto d…",
+        "idUser": 356867567,
+        "nameUser": "mariaordofer",
+        "numPost": 8,
+        "languagePost": "es",
+        "userMentions": [
+            "JorgeGlas"
+        ],
+        "hashtag": []
+    },
+    {
+        "data": "Thu Jun 11 09:11:49 +0000 2020",
+        "idPost": 852815872,
+        "textPost": "#nowPlaying on Surf Rock Radio: Terremoto Stomp [2zQ] by Didi Wray! Listen live on https://t.co/7PJjXKxOwv… https://t.co/qAT8kBdMMp",
+        "idUser": 1558614182,
+        "nameUser": "SurfRockRadio",
+        "numPost": 19,
+        "languagePost": "en",
+        "userMentions": [],
+        "hashtag": [
+            "nowPlaying"
+        ]
+    },
+```
+
 #### HTTP-response
 
 Al fine di rendere il progetto di maggior comprensione all'utente finale,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie bensì sono stati utilizzati dei codici HTTP- response.
