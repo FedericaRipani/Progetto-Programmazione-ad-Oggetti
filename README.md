@@ -1,7 +1,7 @@
 
 ## Introduzione al Progetto
 
-Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esame denominato "OOP-Project-TwitterTimeline" svolto nel corso di "Programmazione ad Oggetti" A.A.2019/2020. Il programma ha come obiettivo l'analisi della Timeline di Twitter relativa ai post inerenti il terremoto. Questa timeline è estrapolata da un URL e sono stati presi in considerazione solo i dati più caratteristici di ogni tweet. L'utente, tramite apposite richieste, potrà effettuare filtri e statistiche, le statistiche possono essere effettuate sia sull'intera collezione di dati che su una sua parte applicando prima un filtraggio.
+Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esame denominato "OOP-Project-TwitterTimeline" svolto nel corso di "Programmazione ad Oggetti" A.A.2019/2020. Il programma ha come obiettivo l'analisi della Timeline di Twitter relativa ai post inerenti il terremoto. Questa timeline è estrapolata da un [URL](https://wd4hfxnxxa.execute-api.us-east-2.amazonaws.com/dev/api/1.1/search/tweets.json?q=terremoto&count=100) e sono stati presi in considerazione solo i dati più caratteristici di ogni tweet. L'utente, tramite apposite richieste, potrà effettuare filtri e statistiche, le statistiche possono essere effettuate sia sull'intera collezione di dati che su una sua parte applicando prima un filtraggio.
 
 ---
 
@@ -15,7 +15,7 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 
 [JARS](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#jars)
 
-[Autori](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
+[Autori](
 
 ---
 
@@ -32,7 +32,7 @@ Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare
 
 - Una volta importato, basterà selezionare il progetto nel Package Explorer, tasto destro, opzione "Run As" e scegliere "Spring Boot App"
 
-  Il progetto è dunque pronto, difatti apparirà in un console il seguente particolare messaggio di conferma:
+  Il progetto è dunque pronto, difatti apparirà in console il seguente messaggio di conferma:
 
 
 ```java
@@ -40,7 +40,7 @@ Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare
 		                    |**********************|
 		                    |*  APPLICATION READY *|
 		                    |**********************|
-			            ----------------------
+			             ----------------------
 ```
 
 
@@ -113,7 +113,7 @@ Sarà possibile, d'ora in poi, effettuare delle manipolazioni e ottenere informa
 ## **Funzionamento**
 
 
-Tramite il Diagramma dei casi d'uso riportato di seguito viene spiegato quali sono le richieste  che il client può effettuare tramite API REST GET.
+Il seguente Diagramma dei casi d'uso mostra le richieste che il client può effettuare tramite API REST GET.
 
 
 <img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/Use%20Case%20Diagram.svg" style="zoom: 5%;" style="align: center;"/>
@@ -122,7 +122,6 @@ Tramite il Diagramma dei casi d'uso riportato di seguito viene spiegato quali so
 #### Come effettuare le richieste
 
 E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad esempio Postman) che tramite richiesta all' URL http://localhost:8080/.
-
 
 
 ---
@@ -169,8 +168,8 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
 > *Esempio di chiamata per le statistiche di tipo stringa: http://localhost:8080/stats?field=nameUser.*
 
 
-
 ##### ! TUTTI I DATI RESTITUITI SONO IN FORMATO JSON !
+
 ##### Esempio di risposta alla chiamata  http://localhost:8080/stats?field=numPost&filter={"type":"UpperBound","fields":"TextPost","lower":100}.
 ```
 {
@@ -195,6 +194,7 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
 ```
 
 ##### Esempio di risposta parziale alla chiamata   http://localhost:8080/getTweets
+La risposta è parziale perchè, per ragioni di spazio, ne è stata inserita solo una parte.
 
 
 ```
@@ -256,12 +256,16 @@ Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi U
 
 ---
 
-## **JARS**
+## **JARS e linguaggio java**
 
 Nel progetto sono stati utilizzati i seguenti JARS:
 - [Apache common I/O](https://mvnrepository.com/artifact/commons-io/commons-io).
 - [JUnit Jupiter API](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
 - [Json](https://mvnrepository.com/artifact/org.json/json).
+
+Nel progetto sono state implementete le seguenti strutture dati:
+- `ArrayList<>`
+- `HashMap<,>`
 
 ---
 
