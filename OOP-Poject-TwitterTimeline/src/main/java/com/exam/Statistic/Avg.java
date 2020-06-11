@@ -12,8 +12,8 @@ public class Avg extends AbstractStatistic {
 	
 	
 	public double calcola(ArrayList<Tweet> vett, String field) {
-		// Quando faremo la classe Sum:
-		// return	new Sum().calcola(vett, field) / vett.size();
+		
+		return	new Sum().calcola(vett, field) / vett.size();
 		
 	}
 
