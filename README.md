@@ -24,13 +24,20 @@ Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare
 
 - Una volta importato, basterà selezionare il progetto nel Package Explorer, tasto destro, opzione "Run As" e scegliere "Spring Boot App"
 
-  Il progetto è dunque pronto, difatti apparirà in un console un messaggio "APPLICATION READY".
+  Il progetto è dunque pronto, difatti apparirà in un console un particolare messaggio di conferma:
+  ```java
+				     ----------------------
+		                    |**********************|
+		                    |*  APPLICATION READY *|
+		                    |**********************|
+			             ----------------------
+```.
   
   
 
 #### **Download**
 
-Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente verrà effettuato il download di una collezione di **tweets**. Ogni elemento presenta molti campi, il funzionamento del nostro progetto si basa su una selezione di essi:
+Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente verrà effettuato il download di una collezione di **tweets**. Ogni elemento presenta molti campi, ma il progetto si basa su una selezione di essi, i più caratteristici:
 
 ```json
 [
@@ -82,15 +89,7 @@ Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente ver
 ]
 ```
 
-La collezione di json scaricata viene rappresentata, mediante una collezione di oggetti specificatamente creati con i campi d'interesse chiamati `Tweet`, in fase di generazione del server. Ad operazione conclusa il programma mostra conferma tramite il server mostrando un messaggio particolare in console:
-
-```java
-							 ----------------------
-		                    |**********************|
-		                    |*  APPLICATION READY *|
-		                    |**********************|
-			                 ----------------------
-```
+La collezione di json scaricata viene rappresentata, mediante una collezione di oggetti specificatamente creati con i campi d'interesse chiamati `Tweet`, in fase di generazione del server. Ad operazione conclusa il programma da conferma tramite il server, mostrando in console il particolare messaggio sopracitato.
 
 Sarà possibile, d'ora in poi, effettuare delle manipolazioni e ottenere informazioni sul *database*.
 
