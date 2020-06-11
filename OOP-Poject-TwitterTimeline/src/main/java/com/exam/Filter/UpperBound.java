@@ -15,70 +15,71 @@ import com.exam.Abstract.*;
 
 public class UpperBound extends AbstractFilter  {
 	
-
-	private int lower;
+	private int upper;
 	
-	public UpperBound(String fields, int lowers) {
-		super(fields);
-		setLower(lowers);
+	
+
+	public UpperBound(String fields, int uppers) {
+	super(fields);
+	setUpper(uppers);
 	}
 	
-	public int getLower() {
-		return lower;
+	
+	public int getUpper() {
+	return upper;
+	}
+	
+
+	public void setUpper(int upper) {
+	this.upper = upper;
 	}
 
-	public void setLower(int lower) {
-		this.lower = lower;
-	}
-
-	@Override
-	public boolean approved(Tweet data, boolean equal)
-	{
-		boolean approvato = true;
-		
-		switch (getFields()) {
-		
-		case "TextPost":
-			if(equal) {
-				if(data.getTextPost().length()<lower) 	
-					approvato=false;
-				}
-			else {
-				if(data.getTextPost().length()<=lower) 	
-					approvato=false;
-				}
-			break;
-		case "numPost":
-			if(equal) {
-				if(data.getNumPost()<lower) 	
-					approvato=false;
-				}
-			else {
-				if(data.getNumPost()<=lower) 	
-					approvato=false;
-				}
-			break;
-			default:approvato=false;
-			break;
-	}		
-			if (approvato)
-				return true;
-			else
-				return false;
-	}
-
+	public boolean approved(Tweet data, boolean equal) {
+	boolean approvato = true;
 	
+	switch (getFields()) {
 	
-	
-	@Override
-	public ArrayList<Tweet> apply (ArrayList<Tweet> list, boolean equal) {
-		ArrayList<Tweet> filtredArray = new ArrayList<Tweet>();
-		for (int i = 0; i < list.size(); i++) {
-			if (approved(list.get(i), equal)) {
-				filtredArray.add(list.get(i));
+	case "TextPost":
+		if(equal) {
+			if(data.getTextPost().length()>upper) 	
+				approvato=false;
 			}
-		}
+		else {
+			if(data.getTextPost().length()>=upper) 	
+				approvato=false;
+			}
+		break;
+	case "numPost":
+		if(equal) {
+			if(data.getNumPost()>upper) 	
+				approvato=false;
+			}
+		else {
+			if(data.getNumPost()>=upper) 	
+				approvato=false;
+			}
+		break;
+		default:approvato=false;
+		break;
+		}		
+		if (approvato)
+			return true;
+		else
+			return false;
+}
 
-		return filtredArray;
+
+	public ArrayList<Tweet> apply (ArrayList<Tweet> list, boolean equal) {
+	ArrayList<Tweet> filtredArray = new ArrayList<Tweet>();
+	for (int i = 0; i < list.size(); i++) {
+		if (approved(list.get(i), equal)) {
+			filtredArray.add(list.get(i));
+		}
 	}
+
+	return filtredArray;
+	}
+	
+
+	
 }

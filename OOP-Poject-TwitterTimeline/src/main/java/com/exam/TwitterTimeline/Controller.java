@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.exam.Database.*;
 import com.exam.Service.FilterService;
+import com.exam.Service.StatsService;
 import com.exam.model.Metadati;
 import com.exam.model.Tweet;
 
@@ -34,19 +35,25 @@ public class Controller {
 	private ArrayList<Tweet> vett;
 	private Boolean val;
 	private FilterService filterService;
-
+	private Map<String, Object> map;
+	private StatsService statService;
 
 
 	public Controller() throws IOException {
 		
+		map=new HashMap<String, Object>();
 		filterService = new FilterService();
+		statService= new StatsService();
 		vett= new ArrayList<Tweet>();
 		meta = new DatabaseMetadati();
 		database = new DatabaseTweet().getAll();
 		
-		System.out.println("\n\n|--------------------|");
-		System.out.println("|  APPLICATION READY |");
-		System.out.println("|--------------------|\n\n");
+		
+		System.out.println("\n\n ---------------------- ");
+		System.out.println("|**********************|");
+		System.out.println("|*  APPLICATION READY *|");
+		System.out.println("|**********************|");
+		System.out.println(" ----------------------\n\n");
 	}
 	
 	/**
@@ -89,4 +96,17 @@ public class Controller {
 			return new ResponseEntity<ArrayList<Tweet>>(vett, HttpStatus.OK);
 		
 	}
+	
+	
+	@GetMapping("/stats")
+	public ResponseEntity statistiche(@RequestParam(required = true) String field,
+			@RequestParam(required = false, defaultValue = "") String filter) throws JSONException {
+		map=statService.calculStat(database, field, filter);
+		val=statService.getFlag();
+		if(val==false)
+			return new ResponseEntity<String>("Nessun filtro selezionato/esistente", HttpStatus.NOT_IMPLEMENTED);
+		else
+			return new ResponseEntity<Map<String, Object>>(map,HttpStatus.OK);
+	}
+
 }

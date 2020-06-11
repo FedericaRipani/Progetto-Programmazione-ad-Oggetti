@@ -16,21 +16,22 @@ import com.exam.model.Tweet;
 public class LowerBound extends AbstractFilter {
 	
 	
-private int upper;
+private int lower;
 	
-	public LowerBound(String fields, int uppers) {
+	public LowerBound(String fields, int lowers) {
 		super(fields);
-		setUpper(uppers);
+		setLower(lowers);
 	}
 	
-	public int getUpper() {
-		return upper;
+	public int getLower() {
+		return lower;
 	}
 
-	public void setUpper(int upper) {
-		this.upper = upper;
+	public void setLower(int lower) {
+		this.lower = lower;
 	}
 
+	@Override
 	public boolean approved(Tweet data, boolean equal)
 	{
 		boolean approvato = true;
@@ -39,21 +40,21 @@ private int upper;
 		
 		case "TextPost":
 			if(equal) {
-				if(data.getTextPost().length()>upper) 	
+				if(data.getTextPost().length()<lower) 	
 					approvato=false;
 				}
 			else {
-				if(data.getTextPost().length()>=upper) 	
+				if(data.getTextPost().length()<=lower) 	
 					approvato=false;
 				}
 			break;
 		case "numPost":
 			if(equal) {
-				if(data.getNumPost()>upper) 	
+				if(data.getNumPost()<lower) 	
 					approvato=false;
 				}
 			else {
-				if(data.getNumPost()>=upper) 	
+				if(data.getNumPost()<=lower) 	
 					approvato=false;
 				}
 			break;
@@ -69,7 +70,7 @@ private int upper;
 	
 	
 	
-	
+	@Override
 	public ArrayList<Tweet> apply (ArrayList<Tweet> list, boolean equal) {
 		ArrayList<Tweet> filtredArray = new ArrayList<Tweet>();
 		for (int i = 0; i < list.size(); i++) {
