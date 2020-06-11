@@ -3,6 +3,9 @@
 
 Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esame denominato "OOP-Project-TwitterTimeline" svolto nel corso di "Programmazione ad Oggetti" A.A.2019/2020. Il programma ha come obiettivo l'analisi della Timeline di Twitter relativa ai post inerenti il terremoto. Questa timeline è estrapolata da un URL e sono stati presi in considerazione solo i dati più caratteristici di ogni tweet. L'utente, tramite apposite richieste, potrà effettuare filtri e statistiche, le statistiche possono essere effettuate sia sull'intera collezione di dati che su una sua parte applicando prima un filtraggio.
 
+
+## INDICE
+
 [Pre requisiti ed avvio del progetto](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#pre-requisiti-ed-avvio-del-progetto)
 
 [Funzionamento del progetto](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#funzionamento)
@@ -117,7 +120,7 @@ E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad 
 
 ---
 
-## Filtri 
+### Filtri 
 I filtri disponibili sono riportati nella seguente tabella:
 |        Filtro        |                         Descrizione                          | Tipo dei field applicabili |              Esempio del filtro in formato JSON              |
 | :------------------: | :----------------------------------------------------------: | :------------------------: | :----------------------------------------------------------: |
@@ -129,31 +132,34 @@ I filtri disponibili sono riportati nella seguente tabella:
 |  Included and equal  | Cerca i valori del campo scelto (**fields**) nei valori compresi o uguali tra la soglia **lower** e **upper**. |          Numerici          | {"type":"IncludedE","fields":"supwater","upper":100,"lower":20} |
 |        Search        | Cerca le stringhe del campo scelto (**fields**) uguali ad una determinata parola (**value**) |          Stringhe          | {"type":"Search", "fields": "Hashtag","value"= "terremoto"}  |
 
-I filtri di tipo numerico sono applicabili ai campi: `TextPost` e `numPost`. In questo caso per il `TextPost` si fa riferimento alla sua lunghezza.
+> I filtri di tipo numerico sono applicabili ai campi: `TextPost` e `numPost`. In questo caso per il `TextPost` si fa riferimento alla sua lunghezza.
 
-I filtri di tipo stringa sono applicabili ai campi: `TextPost`, `NameUser` e `Hashtag`.
+> I filtri di tipo stringa sono applicabili ai campi: `TextPost`, `NameUser` e `Hashtag`.
 
 ---
 
-## Statistiche
+### Statistiche
 
 E' possibile eseguire delle statistiche su un campo.
 
 La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa, applicando prima un filtro.
+|        Statistica         |                         Descrizione                          |       Tipo        |
+| :-----------------------: | :----------------------------------------------------------: | :---------------: |
+|       Minimo (Min)        | Dato il campo (**field**), calcola il minimo valore in quel campo |  Numerico (int)   |
+|       Massimo (Max)       | Dato il campo (**field**), calcola il massimo valore in quel campo |  Numerico (int)   |
+|        Media (Avg)        | Dato il campo (**field**), calcola la media dei valori di quel campo | Numerico (double) |
+|        Somma (Sum)        | Dato il campo (**field**), calcola la somma di tutti i valori di quel campo |  Numerico (int)   |
+| Deviazione Standard (Std) |                         Da vedere!!!                         | Numerico (double) |
+|     Occorrrenze (Occ)     |      Dato il campo (**field**),  calcola le occorrenze       |      Stringa      |
 
-|        Statistica         |                         Descrizione                          |            Field applicabili             |
-| :-----------------------: | :----------------------------------------------------------: | :--------------------------------------: |
-|       Minimo (Min)        | Dato il campo (**field**), calcola il minimo valore in quel campo |         idPost, idUser e numPost         |
-|       Massimo (Max)       | Dato il campo (**field**), calcola il massimo valore in quel campo |         idPost, idUser e numPost         |
-|        Media (Avg)        | Dato il campo (**field**), calcola la media dei valori di quel campo |         idPost, idUser e numPost         |
-|        Somma (Sum)        | Dato il campo (**field**), calcola la somma di tutti i valori di quel campo |         idPost, idUser e numPost         |
-| Deviazione Standard (Std) |                         Da vedere!!!                         |         idPost, idUser e numPost         |
-| Occorrrenze (Occ)  |      Dato il campo (**field**),  calcola le occorrenze       | data, textPost, nameUser e  languagePost |
 
+> Statistiche numeriche applicabili sui campi: `idPost`, `idUser` e `numPost`;
+>
+> *Esempio di chiamata per le statistiche numeriche: http://localhost:8080/stats?field=numPost.*
 
-> *Esempio di chiamata per le statistiche numeriche: http://localhost:8080/stats?field=numPost*
-
-> *Esempio di chiamata per le statistiche di tipo stringa: http://localhost:8080/stats?field=nameUser*
+> Statistiche di tipo stringa applicabili sui campi: `data`, `textPost`, `nameUser` e  `languagePost`;
+>
+> *Esempio di chiamata per le statistiche di tipo stringa: http://localhost:8080/stats?field=nameUser.*
 
 
 
@@ -213,7 +219,7 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
     },
 ```
 ---
-## HTTP-response
+### HTTP-response
 
 Al fine di rendere il progetto di maggior comprensione all'utente finale,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie bensì sono stati utilizzati dei codici HTTP- response.
 
