@@ -3,6 +3,7 @@
 
 Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esame denominato "OOP-Project-TwitterTimeline" svolto nel corso di "Programmazione ad Oggetti" A.A.2019/2020. Il programma ha come obiettivo l'analisi della Timeline di Twitter relativa ai post inerenti il terremoto. Questa timeline è estrapolata da un URL e sono stati presi in considerazione solo i dati più caratteristici di ogni tweet. L'utente, tramite apposite richieste, potrà effettuare filtri e statistiche, le statistiche possono essere effettuate sia sull'intera collezione di dati che su una sua parte applicando prima un filtraggio.
 
+---
 
 ## INDICE
 
@@ -15,6 +16,8 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 [JARS](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#jars)
 
 [Autori](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
+
+---
 
 ## **Pre requisiti ed avvio del progetto**
 
@@ -46,7 +49,7 @@ Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare
 
 #### **Download**
 
-Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente verrà effettuato il download di una collezione di **tweets**. Ogni elemento presenta molti campi, ma il progetto si basa su una selezione di essi, i più caratteristici:
+Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente verrà effettuato il download di una collezione di **tweets**. Ogni tweet presenta moltissimi campi, per il progetto sono stati scelti i più caratteristici:
 
 ```json
 [
@@ -98,9 +101,13 @@ Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente ver
 ]
 ```
 
-La collezione di json scaricata viene rappresentata, mediante una collezione di oggetti specificatamente creati con i campi d'interesse chiamati `Tweet`, in fase di generazione del server. Ad operazione conclusa il programma da conferma tramite il server, mostrando in console il particolare messaggio sopracitato.
+La collezione di json verrà scaricata, e rappresentata come insieme di `Tweet`, in fase di generazione del server con il nome *database*. 
+Ad operazione conclusa il programma da conferma tramite il server, mostrando in console il particolare messaggio sopracitato.
 
 Sarà possibile, d'ora in poi, effettuare delle manipolazioni e ottenere informazioni sul *database*.
+
+
+---
 
 
 ## **Funzionamento**
@@ -221,9 +228,18 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
 ---
 ### HTTP-response
 
-Al fine di rendere il progetto di maggior comprensione all'utente finale,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie bensì sono stati utilizzati dei codici HTTP- response.
+Al fine di rendere il progetto di maggior comprensione per l'utente,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie, bensì sono stati utilizzati i seguenti codici HTTP- response:
 
-Il client invia la richiesta al server, quindi attende la risposta (response). L'obiettivo del server è quindi di interpretare la richiesta del client e restituire una risposta correlata da un codice ben visibile sull' applicazione di testing [Postman](https://www.postman.com/) come di seguito dimostrato.
+
+|   Codice Riposta    |           Chiamate possibili            |                         Significato                          |
+| :-----------------: | :-------------------------------------: | :----------------------------------------------------------: |
+|     `200 - OK`      | `getMeta, getTweets,  filtering, stats` | L'operazione è andata a buon fine, il risultato prodotto è quello aspettato. |
+| `400 - BAD REQUEST` |           `filtering, stats`            | Il filtro o il field immesso non è stato implementato oppure è incorretto. |
+| `204 - NO CONTENT`  |               `filtering                | L'operazione è andata a buon fine ma non ha prodotto risultato, la selezione è vuota. |
+|  `404 - NOT FOUND`  |                  stats                  | Dopo aver richiesto le statistiche è stato immesso un filtro o un field incorretto. |
+
+
+Il client invia la richiesta al server, quindi attende la risposta (response). Il compito del server è quello di interpretare la richiesta del client e restituire una risposta correlata da un codice ben visibile sull' applicazione di testing (as esempio [Postman](https://www.postman.com/)) come mostra la seguente immagine.
 
 
 <img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/PostmanCodiceHttp.JPG" style="zoom: 5%;" style="align: center;"/>
@@ -232,11 +248,11 @@ Il client invia la richiesta al server, quindi attende la risposta (response). L
 
 ## **Struttura**
 
-Il progetto è strutturato con vari package rispettando il pattern architetturale MVC come di seguito dimostrato:
+Il progetto è diviso in package, rispettando il pattern architetturale MVC, come mostrato di seguito:
 
 <img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/Package.svg" style="zoom: 5%;" style="align: center;"/>
 
-Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi UML, si faccia riferimento a questa [cartella](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/tree/master/UML).
+Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi UML, si faccia riferimento alla cartella denominata [UML](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/tree/master/UML) presente nella repository.
 
 ---
 
