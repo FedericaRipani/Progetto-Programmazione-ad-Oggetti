@@ -117,8 +117,19 @@ E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad 
 
 #### Filtri 
 I filtri disponibili sono riportati nella seguente tabella:
-!!!!!!Verificare che non siano stati invertiti i filtri UpperBound e LowerBound + specificare che del testo si considera la sua lunghezza come parametro!!!!!!
-////Metteremo tabella////
+|        Filtro        |                         Descrizione                          | Tipo dei field applicabili |              Esempio del filtro in formato JSON              |
+| :------------------: | :----------------------------------------------------------: | :------------------------: | :----------------------------------------------------------: |
+|      UpperBound      | Cerca i valori del campo scelto (**field**) maggiori della soglia **lower**. |          Numerici          |     {"type":"UpperBound","field":"TextPost","lower":20}      |
+| UpperBound and equal | DescrizioneDescrizioneCerca i valori del campo scelto (**field**) maggiori o uguali della soglia **lower**. |          Numerici          |     {"type":"UpperBoundE","field":"TextPost","lower":20}     |
+|      LowerBound      | Cerca i valori del campo scelto inferiori della soglia **upper** nel campo **field**. |          Numerici          |     {"type":"LowerBound","field":"TextPost","upper":100}     |
+| LowerBound and equal | Cerca i valori del campo scelto (**field**) inferiori o uguali della soglia **upper**. |          Numerici          |    {"type":"LowerBoundE","field":"TextPost","upper":100}     |
+|       Included       | Cerca i valori del campo scelto (**fields**)nei valori compresi tra la soglia **lower** e **upper**. |          Numerici          | {"type":"Included","fields":"TextPost","upper":100,"lower":20} |
+|  Included and equal  | Cerca i valori del campo scelto (**fields**) nei valori compresi o uguali tra la soglia **lower** e **upper**. |          Numerici          | {"type":"IncludedE","fields":"supwater","upper":100,"lower":20} |
+|        Search        | Cerca le stringhe del campo scelto (**fields**) uguali ad una determinata parola (**value**) |          Stringhe          | {"type":"Search", "fields": "Hashtag","value"= "terremoto"}  |
+
+I filtri di tipo numerico sono applicabili ai campi: `TextPost` e `numPost`. In questo caso per il `TextPost` si fa riferimento alla sua lunghezza.
+
+I filtri di tipo stringa sono applicabili ai campi: `TextPost`, `NameUser` e `Hashtag`.
 
 
 #### Statistiche
