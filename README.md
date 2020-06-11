@@ -15,7 +15,7 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 
 [JARS](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#jars)
 
-[Autori](
+[Autori](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
 
 ---
 
