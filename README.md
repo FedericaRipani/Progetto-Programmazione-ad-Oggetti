@@ -30,7 +30,69 @@ Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare
 
 #### **Download**
 
-Nel momento in cui si clicca su "Run as" -> "Spring Boot Application", automaticamente si effettua il download dei Tweet ed i relativi dati. Si creerà un JSONArray formato da tutti i Tweet ed i campi al loro interno.
+Nel momento in cui si clicca su `Run as -> Spring Boot App`, automaticamente verrà effettuato il download di una collezione di **tweets**. Ogni elemento presenta molti campi, il funzionamento del nostro progetto si basa su una selezione di essi:
+
+```json
+[
+    {
+        "name": "data",
+        "sourceField": "Data di creazione del twitt",
+        "type": "String"
+    },
+    {
+        "name": "idPost",
+        "sourceField": "Descrive in modo univoco il post",
+        "type": "Integer"
+    },
+    {
+        "name": "textPost",
+        "sourceField": "Campo testuale del post",
+        "type": "String"
+    },
+    {
+        "name": "idUser",
+        "sourceField": "Descrive in modo univoco l'utente",
+        "type": "Integer"
+    },
+    {
+        "name": "nameUser",
+        "sourceField": "Nome dell'utente",
+        "type": "String"
+    },
+    {
+        "name": "numPost",
+        "sourceField": "Numero dei tweet di quell'utente",
+        "type": "Integer"
+    },
+    {
+        "name": "languagePost",
+        "sourceField": "Lingua del twitt",
+        "type": "String"
+    },
+    {
+        "name": "userMentions",
+        "sourceField": "Descrive gli utenti menzionati",
+        "type": "String"
+    },
+    {
+        "name": "hashtag",
+        "sourceField": "Descrive gli Hashtag impiegati nel post",
+        "type": "String"
+    }
+]
+```
+
+La collezione di json scaricata viene rappresentata, mediante una collezione di oggetti specificatamente creati con i campi d'interesse chiamati `Tweet`, in fase di generazione del server. Ad operazione conclusa il programma mostra conferma tramite il server mostrando un messaggio particolare in console:
+
+```java
+							 ----------------------
+		                    |**********************|
+		                    |*  APPLICATION READY *|
+		                    |**********************|
+			                 ----------------------
+```
+
+Sarà possibile, d'ora in poi, effettuare delle manipolazioni e ottenere informazioni sul *database*.
 
 
 ## **Funzionamento**
