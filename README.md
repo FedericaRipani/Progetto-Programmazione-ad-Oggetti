@@ -222,7 +222,12 @@ Il progetto è strutturato con vari package rispettando il pattern architettural
 
 Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi UML, si faccia riferimento a questa [cartella](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/tree/master/UML).
 
+## **JARS**
 
+Nel progetto sono stati utilizzati i seguenti JARS:
+- [Apache common I/O](https://mvnrepository.com/artifact/commons-io/commons-io).
+- [JUnit Jupiter API](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
+- [Json](https://mvnrepository.com/artifact/org.json/json).
 
 
 ## Autori
@@ -235,3 +240,6 @@ Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi U
 Studentesse del 2° anno di Ing. Informatica e dell'Automazione presso l'UNIVPM.
 
 Il link rimanda al profilo Twitter creato in occasione dello sviluppo del progetto.
+
+Il progetto è stato svolto in completa coollaborazione e, ove possibile, sono state fatte opportune suddivisioni dei compiti.
+Per le suddivisioni specifiche si rimanda alla consultazione degli `@author` nel JavaDoc.
