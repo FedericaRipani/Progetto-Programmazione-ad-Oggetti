@@ -115,7 +115,7 @@ E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad 
 
 ---
 
-#### Filtri 
+## Filtri 
 I filtri disponibili sono riportati nella seguente tabella:
 |        Filtro        |                         Descrizione                          | Tipo dei field applicabili |              Esempio del filtro in formato JSON              |
 | :------------------: | :----------------------------------------------------------: | :------------------------: | :----------------------------------------------------------: |
@@ -131,8 +131,9 @@ I filtri di tipo numerico sono applicabili ai campi: `TextPost` e `numPost`. In 
 
 I filtri di tipo stringa sono applicabili ai campi: `TextPost`, `NameUser` e `Hashtag`.
 
+---
 
-#### Statistiche
+## Statistiche
 
 E' possibile eseguire delle statistiche su un campo.
 
@@ -146,6 +147,12 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
 |        Somma (Sum)        | Dato il campo (**field**), calcola la somma di tutti i valori di quel campo |         idPost, idUser e numPost         |
 | Deviazione Standard (Std) |                         Da vedere!!!                         |         idPost, idUser e numPost         |
 | Occorrrenze (Occ)  |      Dato il campo (**field**),  calcola le occorrenze       | data, textPost, nameUser e  languagePost |
+
+
+> *Esempio di chiamata per le statistiche numeriche: http://localhost:8080/stats?field=numPost*
+
+> *Esempio di chiamata per le statistiche di tipo stringa: http://localhost:8080/stats?field=nameUser*
+
 
 
 ##### ! TUTTI I DATI RESTITUITI SONO IN FORMATO JSON !
@@ -203,8 +210,8 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
         ]
     },
 ```
-
-#### HTTP-response
+---
+## HTTP-response
 
 Al fine di rendere il progetto di maggior comprensione all'utente finale,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie bensì sono stati utilizzati dei codici HTTP- response.
 
@@ -213,6 +220,7 @@ Il client invia la richiesta al server, quindi attende la risposta (response). L
 
 <img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/PostmanCodiceHttp.JPG" style="zoom: 5%;" style="align: center;"/>
 
+---
 
 ## **Struttura**
 
@@ -222,6 +230,8 @@ Il progetto è strutturato con vari package rispettando il pattern architettural
 
 Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi UML, si faccia riferimento a questa [cartella](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/tree/master/UML).
 
+---
+
 ## **JARS**
 
 Nel progetto sono stati utilizzati i seguenti JARS:
@@ -229,6 +239,7 @@ Nel progetto sono stati utilizzati i seguenti JARS:
 - [JUnit Jupiter API](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
 - [Json](https://mvnrepository.com/artifact/org.json/json).
 
+---
 
 ## Autori
 
