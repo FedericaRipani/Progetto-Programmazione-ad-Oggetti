@@ -109,6 +109,19 @@ public class Controller {
 			if(map!=null)
 				return new ResponseEntity<Stats>(map,HttpStatus.OK);
 			}
-		return new ResponseEntity<String>("Field immesso inesistente", HttpStatus.BAD_REQUEST);
+		 if (!filter.isEmpty()) {
+				
+				if(filters(filter).getStatusCode() != HttpStatus.OK) return new ResponseEntity<String>("Selezione dati per statistiche vuota", HttpStatus.NOT_FOUND);
+
+					@SuppressWarnings("unchecked")
+					ArrayList<Tweet> filtrati = (ArrayList<Tweet>)filters(filter).getBody();
+					
+					map=statService.calculStat(filtrati, field, filter);
+					if(map!=null)
+						return new ResponseEntity<Stats>(map,HttpStatus.OK);
+
+			
+		     }
+		 return new ResponseEntity<String>("Field immesso inesistente", HttpStatus.BAD_REQUEST);
 	}
 }
