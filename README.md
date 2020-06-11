@@ -24,15 +24,19 @@ Successivamente, una volta aperto l'ambiente di sviluppo, bisognerà effetttuare
 
 - Una volta importato, basterà selezionare il progetto nel Package Explorer, tasto destro, opzione "Run As" e scegliere "Spring Boot App"
 
-  Il progetto è dunque pronto, difatti apparirà in un console un particolare messaggio di conferma:
-  ```java
-				     ----------------------
+  Il progetto è dunque pronto, difatti apparirà in un console il seguente particolare messaggio di conferma:
+
+
+```java
+			             ----------------------
 		                    |**********************|
 		                    |*  APPLICATION READY *|
 		                    |**********************|
-			             ----------------------
-```.
-  
+			            ----------------------
+```
+
+
+
   
 
 #### **Download**
