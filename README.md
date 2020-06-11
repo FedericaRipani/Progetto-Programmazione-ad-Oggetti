@@ -9,7 +9,7 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 
 [Struttura del progetto](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#struttura)
 
-
+[Autori](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
 
 ## **Pre requisiti ed avvio del progetto**
 
@@ -119,6 +119,39 @@ E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad 
 I filtri disponibili sono riportati nella seguente tabella:
 !!!!!!Verificare che non siano stati invertiti i filtri UpperBound e LowerBound + specificare che del testo si considera la sua lunghezza come parametro!!!!!!
 ////Metteremo tabella////
+
+
+#### Statistiche
+
+E' possibile eseguire delle statistiche su un campo.
+
+Il campo può riferirsi a tutta la Timeline di Tweet o ad una scala ridotta, quindi applicando prima un filtro.
+
+(INSERIRE TABELLA)
+
+##### ! TUTTI I DATI RESTITUITI SONO IN FORMATO JSON !
+##### Esempio di risposta alla chiamata  http://localhost:8080/stats?field=numPost&filter={"type":"UpperBound","fields":"TextPost","lower":100}.
+```
+{
+
+  "m": {
+
+​    "Deviazione standard": 69.40997754134797,
+
+​    "Field": "numPost",
+
+​    "Massimo": 499.0,
+
+​    "Media": 26.90909090909091,
+
+​    "Minimo": 0.0,
+
+​    "Sommatoria": 2072.0
+
+  }
+
+}
+```
 
 
 ## **Struttura**
