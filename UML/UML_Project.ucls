@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.exam.model.StringStat" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/model/StringStat.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2351" y="71"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.exam.Filter.Search" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Filter/Search.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3322" y="1016"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.exam.Statistic.Sum" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Statistic/Sum.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="633" y="535"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.exam.Service.StatsService" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Service/StatsService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5496" y="369"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.exam.Abstract.AbstractStatistic" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Abstract/AbstractStatistic.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="307" x="1541" y="51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.exam.model.Metadati" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/model/Metadati.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="276" width="228" x="2542" y="585"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.exam.Service.Downloader" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Service/Downloader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="236" x="414" y="51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.exam.Statistic.Max" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Statistic/Max.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1040" y="535"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.exam.Abstract.AbstractFilter" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Abstract/AbstractFilter.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3879" y="759"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.exam.Statistic.Std" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Statistic/Std.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1377" y="533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.exam.Filter.Included" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Filter/Included.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3755" y="1044"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.exam.Database.DatabaseMetadati" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Database/DatabaseMetadati.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2686" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.exam.Database.DatabaseTweet" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Database/DatabaseTweet.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3031" y="398"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.exam.Filter.UpperBound" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Filter/UpperBound.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4156" y="1016"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.exam.model.IntegerStat" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/model/IntegerStat.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2369" y="702"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.exam.model.Stats" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/model/Stats.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2359" y="263"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.exam.model.Tweet" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/model/Tweet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5211" y="935"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.exam.TwitterTimeline.Controller" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/TwitterTimeline/Controller.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="196" width="343" x="5114" y="51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.exam.Filter.LowerBound" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Filter/LowerBound.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4574" y="992"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.exam.TwitterTimeline.OopPojectTwitterTimelineApplication" 
+    project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/TwitterTimeline/OopPojectTwitterTimelineApplication.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="349" x="690" y="51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.exam.Statistic.Avg" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Statistic/Avg.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1713" y="527"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.exam.Statistic.Min" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Statistic/Min.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2047" y="529"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.exam.Service.FilterService" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Service/FilterService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="216" width="410" x="4683" y="289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.exam.Statistic.Occ" project="OOP-Poject-TwitterTimeline" 
+    file="/OOP-Poject-TwitterTimeline/src/main/java/com/exam/Statistic/Occ.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="422" x="1079" y="51"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="26">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="27" name="metadata"/>      
+      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <association id="30">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="31" name="filterService"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <bendpoint x="5147" y="319"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="34" name="database"/>      
+      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="37" name="vett"/>      
+      <multiplicity id="38" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <association id="40">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="41" name="tweets">        
+        <position height="22" width="54" x="4938" y="842"/>      
+      </attribute>      
+      <multiplicity id="42" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="44" name="vett"/>      
+      <multiplicity id="45" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="47">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="48">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="49" name="meta"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="52" name="T"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="55">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="56" name="T"/>      
+      <multiplicity id="57" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="58">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <association id="59">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="60" name="map"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="62">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="63">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="64">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="65" name="statService"/>      
+      <multiplicity id="66" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="67">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
