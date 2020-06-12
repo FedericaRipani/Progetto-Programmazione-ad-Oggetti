@@ -274,6 +274,8 @@ Successivamente alla fase di sviluppo del progetto sono stati creati dei test ap
 
 - `TestMetodsStats` : Controlla il risultato dato dalle funzioni che calcolano le statistiche
 
+- `TestHttpStatuses` : Controlla che il codice Http generato sia corretto
+
 
 ---
 
