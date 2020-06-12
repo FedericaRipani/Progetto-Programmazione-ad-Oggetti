@@ -13,6 +13,8 @@ Di seguito verrà spiegato il funzionamento e la composizione del progetto d'esa
 
 [Struttura del progetto](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#struttura)
 
+[Test](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#test)
+
 [JARS](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#jars)
 
 [Autori](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
@@ -124,6 +126,14 @@ Il seguente Diagramma dei casi d'uso mostra le richieste che il client può effe
 E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad esempio Postman) che tramite richiesta all' URL http://localhost:8080/.
 
 
+| DESTINAZIONI                                                 | DESCRIZIONE                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `/getTweets`                                                 | Visualizza tutti i Tweet (rappresentati dai parametri piu importanti) presenti nel Dataset |
+| `/getMeta`                                                   | Visualizza tutti gli alias utilizzati per la descrizione del tweet |
+| `/filtering?filter={"type":"nome_filtro","fields":"campo_esaminato","parametro":valore}` | Visualizza la collezione di Tweet filtrata in base a parametri formato JSON |
+| `/stats?field=campo&<br/>filter{"type":"nome_filtro","fields":"campo_esaminato","parametro":valore}` | Visualizza le statistiche su un campo dei Tweet. Il dataset  di provenienza può essere intero o parziale, applicando prima un filtro |
+
+
 ---
 
 ### Filtri 
@@ -155,7 +165,7 @@ La statistica può riferirsi a tutta la Timeline di Tweet o ad una parte di essa
 |       Massimo (Max)       | Dato il campo (**field**), calcola il massimo valore in quel campo |  Numerico (int)   |
 |        Media (Avg)        | Dato il campo (**field**), calcola la media dei valori di quel campo | Numerico (double) |
 |        Somma (Sum)        | Dato il campo (**field**), calcola la somma di tutti i valori di quel campo |  Numerico (int)   |
-| Deviazione Standard (Std) |                         Da vedere!!!                         | Numerico (double) |
+| Deviazione Standard (Std) | Dato il campo (**field**), calcola la dev.standard di tutti i valori di quel campo | Numerico (double) |
 |     Occorrrenze (Occ)     |      Dato il campo (**field**),  calcola le occorrenze       |      Stringa      |
 
 
@@ -235,8 +245,8 @@ Al fine di rendere il progetto di maggior comprensione per l'utente,  non sono s
 | :-----------------: | :-------------------------------------: | :----------------------------------------------------------: |
 |     `200 - OK`      | `getMeta, getTweets,  filtering, stats` | L'operazione è andata a buon fine, il risultato prodotto è quello aspettato. |
 | `400 - BAD REQUEST` |           `filtering, stats`            | Il filtro o il field immesso non è stato implementato oppure è incorretto. |
-| `204 - NO CONTENT`  |               `filtering                | L'operazione è andata a buon fine ma non ha prodotto risultato, la selezione è vuota. |
-|  `404 - NOT FOUND`  |                  stats                  | Dopo aver richiesto le statistiche è stato immesso un filtro o un field incorretto. |
+| `204 - NO CONTENT`  |               `filtering`                | L'operazione è andata a buon fine ma non ha prodotto risultato, la selezione è vuota. |
+|  `404 - NOT FOUND`  |                  `stats`                 | Dopo aver richiesto le statistiche è stato immesso un filtro o un field incorretto. |
 
 
 Il client invia la richiesta al server, quindi attende la risposta (response). Il compito del server è quello di interpretare la richiesta del client e restituire una risposta correlata da un codice ben visibile sull' applicazione di testing (as esempio [Postman](https://www.postman.com/)) come mostra la seguente immagine.
@@ -253,6 +263,17 @@ Il progetto è diviso in package, rispettando il pattern architetturale MVC, com
 <img src="https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/blob/master/Images/Package.svg" style="zoom: 5%;" style="align: center;"/>
 
 Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi UML, si faccia riferimento alla cartella denominata [UML](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti/tree/master/UML) presente nella repository.
+
+---
+
+## Test
+
+Successivamente alla fase di sviluppo del progetto sono stati creati dei test appositi, utilizzando JUnit5, per verificare la corretezza di alcuni metodi ed eccezioni.
+
+- `TestException` : Controlla la generata eccezione di un JSONObject errato
+
+- `TestMetodsStats` : Controlla il risultato dato dalle funzioni che calcolano le statistiche
+
 
 ---
 
