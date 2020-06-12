@@ -17,7 +17,7 @@ import com.exam.model.Tweet;
  * @author Camilla D'Andrea
  *
  */
-public class StringStat {
+public class StringStat extends Stats{
 	
 	private Stats T;
 	
