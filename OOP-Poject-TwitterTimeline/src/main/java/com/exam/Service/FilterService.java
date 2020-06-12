@@ -31,28 +31,28 @@ public class FilterService {
 		switch (filtro.getString("type")) {
 
 		case "UpperBound": {
-			UpperBound up = new UpperBound(filtro.getString("fields"), filtro.getInt("lower"));
+			UpperBound up = new UpperBound(filtro.getString("fields"), filtro.getInt("upper"));
 			vett = up.apply(twits, false);
 			flag = true;
 			break;
 		}
 
 		case "UpperBoundE": {
-			UpperBound up = new UpperBound(filtro.getString("fields"), filtro.getInt("lower"));
+			UpperBound up = new UpperBound(filtro.getString("fields"), filtro.getInt("upper"));
 			vett = up.apply(twits, true);
 			flag = true;
 			break;
 		}
 
 		case "LowerBound": {
-			LowerBound lo = new LowerBound(filtro.getString("fields"), filtro.getInt("upper"));
+			LowerBound lo = new LowerBound(filtro.getString("fields"), filtro.getInt("lower"));
 			vett = lo.apply(twits, false);
 			flag = true;
 			break;
 		}
 
 		case "LowerBoundE": {
-			LowerBound lo = new LowerBound(filtro.getString("fields"), filtro.getInt("upper"));
+			LowerBound lo = new LowerBound(filtro.getString("fields"), filtro.getInt("lower"));
 			vett = lo.apply(twits, true);
 			flag = true;
 			break;

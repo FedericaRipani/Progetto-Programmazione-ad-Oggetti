@@ -46,21 +46,21 @@ public class Included extends AbstractFilter {
 			switch (getFields()) {
 			case "TextPost":
 				if(equal) {
-					if(data.getTextPost().length()<lower || data.getTextPost().length()>upper) 	
+					if(data.getTextPost().length()>lower || data.getTextPost().length()<upper) 	
 						approvato=false;
 					}
 				else {
-					if(data.getTextPost().length()<=lower || data.getTextPost().length()>upper) 	
+					if(data.getTextPost().length()>=lower || data.getTextPost().length()<upper) 	
 						approvato=false;
 					}
 				break;
 			case "numPost":
 				if(equal) {
-					if(data.getNumPost()<lower || data.getNumPost()>upper) 	
+					if(data.getNumPost()>lower || data.getNumPost()<upper) 	
 						approvato=false;
 					}
 				else {
-					if(data.getNumPost()<=lower || data.getNumPost()>=upper) 	
+					if(data.getNumPost()>=lower || data.getNumPost()<=upper) 	
 						approvato=false;
 					}
 				break;
