@@ -6,7 +6,15 @@ import com.exam.Abstract.*;
 import com.exam.Service.StatsService;
 import com.exam.model.Tweet;
 
-
+/**
+ * Calcola la deviazione standard di una collezione di interi
+ * 
+ * @param vett = ArrayList da esaminare
+ * @param field = campo dell'ArrayList sul quale effettuare le statistiche
+ * @return la deviazione standard in double
+ * 
+ * @author Camilla D'Andrea
+ */
 
 public class Std extends AbstractStatistic {
 	

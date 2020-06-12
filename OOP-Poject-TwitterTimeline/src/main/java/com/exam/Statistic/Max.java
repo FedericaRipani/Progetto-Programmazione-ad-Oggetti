@@ -5,6 +5,15 @@ import com.exam.Abstract.*;
 import com.exam.model.Tweet;
 import com.exam.Service.*;
 
+/**
+	 * Calcola il massimo di una collezione di interi
+	 * 
+	 * @param vett = ArrayList da esaminare
+	 * @param field = campo dell'ArrayList sul quale effettuare le statistiche
+	 * @return massimo = valore della statistiche calcolato come int
+	 * 
+	 * @author Camilla D'Andrea
+*/
 
 public class Max  extends AbstractStatistic {
 
