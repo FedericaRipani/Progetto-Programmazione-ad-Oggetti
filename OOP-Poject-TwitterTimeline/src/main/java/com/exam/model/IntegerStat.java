@@ -6,7 +6,7 @@ import java.util.Map;
 import org.json.JSONException;
 
 import com.exam.Statistic.*;
-import com.exam.model.Tweet;
+
 
 /**
  * Classe che eredita da Stats e crea la mappa(campo-valore)

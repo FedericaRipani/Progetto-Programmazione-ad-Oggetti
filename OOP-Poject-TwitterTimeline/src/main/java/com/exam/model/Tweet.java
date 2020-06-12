@@ -1,4 +1,5 @@
 package com.exam.model;
+
 /** E' la classe base che ci permette di definire come è
  * composto un tweet con gli attributi più significativi
  * @author Camilla D'Andrea

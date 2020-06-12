@@ -83,7 +83,7 @@ public class Controller {
 	
 	/**
 	 * Gestisce la chiamata al server che permette di filtrare
-	 * l'ArrayList di partenza invocando la classe FilterService
+	 * l'ArrayList di partenza invocando la classe FilterService.
 	 * 
 	 * @param filter, è il filtro inserito in formato Json nella query string
 	 * @return L'Array filtrato in base alle richieste con codice HTTP 200
@@ -111,6 +111,21 @@ public class Controller {
 		
 	}
 	
+	
+	/**
+	 * Gestisce la chiamata al server che permette di effettuare
+	 * statistiche sull' array filtrato o non,
+	 * invocando la classe StatisticService.
+	 * 
+	 * @param field = campo sul quale effettuare la statistica
+	 * @param filter = potenziale filtro da applicare 
+	 * 				prima che si effettui la statistica
+	 * @return Le statistiche del field con codice HTTP 200 se viene prodotto risultato,
+	 * 	o HTTP 404 se la selezione dei dati provenienti dall'eventuale filtraggio
+	 * non è idonea,
+	 * 	o HTTP 400 se la richiesta presenta errori di sintassi
+	 * @throws JSONException
+	 */
 	
 	@SuppressWarnings("rawtypes")
 	@GetMapping("/stats")

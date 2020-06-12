@@ -16,7 +16,15 @@ import com.exam.model.*;
 
 public class StatsService {
 	
-
+	
+	/**
+	 * Crea una collezione di attributi dei tweet in base al field
+	 * 
+	 * @param vett = ArrayList da esaminare
+	 * @param field = campo dell'ArrayList sul quale effettuare le statistiche
+	 * @return collezione di interi 
+	 */
+	
 	public  ArrayList<Integer> convInt(ArrayList<Tweet> vett, String field) {
 		 ArrayList<Integer> ids = new ArrayList<Integer>();
 		for (Tweet thing : vett) {
@@ -37,7 +45,16 @@ public class StatsService {
 		}
 		return ids;
 	}
+	
 
+	/**
+	 * Crea una collezione di attributi dei tweet in base al field
+	 * 
+	 * @param vett = ArrayList da esaminare
+	 * @param field = campo dell'ArrayList sul quale effettuare le statistiche
+	 * @return collezione di string
+	 */
+	
 	public ArrayList<String> convStr(ArrayList<Tweet> vett, String field) {
 		ArrayList<String> ids = new ArrayList<String>();
 		for (Tweet thing : vett) {
@@ -67,7 +84,17 @@ public class StatsService {
 		}
 		return ids;
 	}
-
+	
+	
+	/**
+	 * Metodo che sceglie se creare un StringStat o IntegerStat 
+	 * in base al field passato dall'utente
+	 * @param database = ArrayList sul quale effettuare le statistiche
+	 * @param field = campo dell'ArrayList sul quale effettuare le statistiche
+	 * @param filter = eventuale filtro desiderato
+	 * @return le statistiche effettuate
+	 */
+	
 	
 	public Stats calculStat(ArrayList<Tweet> database,String field, String filter){
 			

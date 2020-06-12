@@ -9,6 +9,16 @@ import com.exam.Service.StatsService;
 import com.exam.model.Tweet;
 
 
+/**
+ * Trova le occorrenze di ogni elemento su una collezione di stringhe
+ * 
+ * @param vett = ArrayList da esaminare
+ * @param field = campo dell'ArrayList sul quale effettuare le statistiche
+ * @return map = mappa(campo-valore) contente le occorrenze
+ * 
+ * @author Federica Ripani
+ *
+ */
 
 public class Occ {
 	
