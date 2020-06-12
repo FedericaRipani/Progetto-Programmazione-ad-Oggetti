@@ -26,12 +26,14 @@ import com.exam.model.*;
 class TestMetodsStats {
 	
 	Tweet t1;Tweet t2;Tweet t3;Tweet t4;
-	ArrayList<Tweet> array= new ArrayList<Tweet>();;
+	ArrayList<Tweet> array;
 	double max;double min;double avg;double std;double sum;
-	Map<String, Object> map = new HashMap<String, Object>();
+	Map<String, Object> map ;
 
 	@BeforeEach
 	void setUp() throws Exception {
+	map= new HashMap<String, Object>();
+	array= new ArrayList<Tweet>();
 	Tweet t1 = new Tweet("11Sett",1 ,"Amo le camminate in montagna" , 1087888, "Camilla", 110, "it", null,null) ;
 	Tweet t2 = new Tweet("23Mag", 2,"Giulianova è top" , 1087930, "Federica", 230, "it", null,null) ;
 	Tweet t3 = new Tweet("20Nov",3 , "Il terremoto mi ha segnato", 258024, "Fabio", 599, "it", null, null);

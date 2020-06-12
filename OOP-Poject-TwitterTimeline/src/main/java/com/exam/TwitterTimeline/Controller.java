@@ -81,6 +81,19 @@ public class Controller {
 	
 	}
 	
+	/**
+	 * Gestisce la chiamata al server che permette di filtrare
+	 * l'ArrayList di partenza invocando la classe FilterService
+	 * 
+	 * @param filter, è il filtro inserito in formato Json nella query string
+	 * @return L'Array filtrato in base alle richieste con codice HTTP 200
+	 * altrimenti codice HTTP 204 se la query è stata eseguita con successo 
+	 * ma non ha prodotto risultati
+	 * altrimenti codice HTTP 400 se la query non è stata possibile eseguirla
+	 * ad esempio per una richiesta mal posta dal client
+	 * @throws JSONException  
+	 */
+	
 	@SuppressWarnings("rawtypes")
 	@GetMapping("/filtering")
 	public ResponseEntity filters(@RequestParam String filter) throws JSONException {

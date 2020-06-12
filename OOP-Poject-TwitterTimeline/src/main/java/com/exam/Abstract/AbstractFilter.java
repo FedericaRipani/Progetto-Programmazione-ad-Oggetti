@@ -6,6 +6,15 @@ import org.json.JSONException;
 
 import com.exam.model.Tweet;
 
+/**
+ * 
+ * Classe astratta creata per includere i metodi che ogni singolo
+ * filtro dovrà implementare.
+ * I filtri dovranno di conseguenza implementare i metodi approved
+ * e apply.
+ *
+ *@author Camilla D'Andrea
+ */
 
 public abstract class AbstractFilter {
 	

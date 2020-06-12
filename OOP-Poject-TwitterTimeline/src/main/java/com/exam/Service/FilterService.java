@@ -1,5 +1,12 @@
 package com.exam.Service;
 
+/**
+ *  Service dedicato al calcolo dell'array filtrato
+ *  che in base al JSONObject filtro passato dall'utente,   
+ *  sceglie ed applica il filtro selezionato.
+ * 
+ * @author Camilla D'Andrea
+ */
 
 import com.exam.Filter.*;
 import com.exam.model.Tweet;
