@@ -17,7 +17,7 @@ Di seguito verranno illustrati il funzionamento e la struttura del progetto d'es
 
 [JARs e linguaggio Java](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#jars-e-linguaggio-java)
 
-[Autori](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
+[Autori e JavaDoc](https://github.com/FedericaRipani/Progetto-Programmazione-ad-Oggetti#autori)
 
 ---
 
@@ -294,7 +294,7 @@ Sono state implementate le seguenti strutture dati:
 
 ---
 
-## Autori
+## Autori e JavaDoc
 
 
 [**Federica Ripani**](https://twitter.com/RipaniFederica) - S1086993
