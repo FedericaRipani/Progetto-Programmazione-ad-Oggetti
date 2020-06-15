@@ -141,17 +141,17 @@ E' possibile effettuare le seguenti chiamate sia installando un API Testing (ad 
 I filtri disponibili e alcuni esempi di chiamata sono riportati nella seguente tabella:
 |        Filtro        |                         Descrizione                          | Tipo dei field applicabili |              Esempio del filtro in formato JSON              |
 | :------------------: | :----------------------------------------------------------: | :------------------------: | :----------------------------------------------------------: |
-|      UpperBound      | Cerca i valori del campo scelto (**fields**) minori della soglia **upper**. |          Numerici          |     {"type":"UpperBound","fields":"TextPost","upper":200}      |
-| UpperBound and equal | DescrizioneDescrizioneCerca i valori del campo scelto (**fields**) minori o uguali della soglia **upper**. |          Numerici          |     {"type":"UpperBoundE","fields":"TextPost","upper":200}     |
-|      LowerBound      | Cerca i valori del campo scelto (**fields**) maggiori della soglia **lower**. |          Numerici          |     {"type":"LowerBound","fields":"TextPost","lower":40}     |
-| LowerBound and equal | Cerca i valori del campo scelto (**fields**) maggiori o uguali della soglia **lower**. |          Numerici          |    {"type":"LowerBoundE","field":"TextPost","lower":40}     |
-|       Included       | Cerca i valori del campo scelto (**fields**)nei valori compresi tra la soglia **lower** e **upper**. |          Numerici          | {"type":"Included","fields":"TextPost","lower":20,"upper":500} |
+|      UpperBound      | Cerca i valori del campo scelto (**fields**) minori della soglia **upper**. |          Numerici          |     {"type":"UpperBound","fields":"textPost","upper":200}      |
+| UpperBound and equal | DescrizioneDescrizioneCerca i valori del campo scelto (**fields**) minori o uguali della soglia **upper**. |          Numerici          |     {"type":"UpperBoundE","fields":"textPost","upper":200}     |
+|      LowerBound      | Cerca i valori del campo scelto (**fields**) maggiori della soglia **lower**. |          Numerici          |     {"type":"LowerBound","fields":"textPost","lower":40}     |
+| LowerBound and equal | Cerca i valori del campo scelto (**fields**) maggiori o uguali della soglia **lower**. |          Numerici          |    {"type":"LowerBoundE","field":"textPost","lower":40}     |
+|       Included       | Cerca i valori del campo scelto (**fields**)nei valori compresi tra la soglia **lower** e **upper**. |          Numerici          | {"type":"Included","fields":"textPost","lower":20,"upper":500} |
 |  Included and equal  | Cerca i valori del campo scelto (**fields**) nei valori compresi o uguali tra la soglia **lower** e **upper**. |          Numerici          | {"type":"IncludedE","fields":"numPost","lower":20,"upper":500} |
-|        Search        | Cerca le stringhe del campo scelto (**fields**) uguali ad una determinata parola (**value**) |          Stringhe          | {"type":"Search", "fields": "Hashtag","value"= "terremoto"}  |
+|        Search        | Cerca le stringhe del campo scelto (**fields**) uguali ad una determinata parola (**value**) |          Stringhe          | {"type":"Search", "fields": "hashtag","value"= "terremoto"}  |
 
-> I filtri di tipo numerico sono applicabili ai campi: `TextPost` e `numPost`. In questo caso per il `TextPost` si fa riferimento alla sua lunghezza.
+> I filtri di tipo numerico sono applicabili ai campi: `textPost` e `numPost`. In questo caso per il `TextPost` si fa riferimento alla sua lunghezza.
 
-> I filtri di tipo stringa sono applicabili ai campi: `TextPost`, `NameUser` e `Hashtag`.
+> I filtri di tipo stringa sono applicabili ai campi: `textPost`, `nameUser` e `hashtag`.
 
 
 ---
