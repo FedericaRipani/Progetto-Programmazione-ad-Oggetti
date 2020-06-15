@@ -36,7 +36,7 @@ public class Search extends AbstractFilter{
 		
 
 		switch (getFields()) {
-		case "TextPost":
+		case "textPost":
 			if (equal) {
 				
 				found = data.getTextPost().contains(value);
@@ -45,14 +45,14 @@ public class Search extends AbstractFilter{
 			} 
 			break;
 
-		case "NameUser":
+		case "nameUser":
 			if (equal) {
 				found = data.getNameUser().contains(value);
 				if (found == false)
 					approvato = false;
 			}
 			break;
-		case "Hashtag":
+		case "hashtag":
 			if (equal) {
 				for(int i=0; i<data.getHashtag().length; i++) {
 					if (data.getHashtag()[i] == value)

@@ -39,7 +39,7 @@ private int lower;
 		
 		switch (getFields()) {
 		
-		case "TextPost":
+		case "textPost":
 			if(equal) {
 				if(data.getTextPost().length()<lower) 	
 					approvato=false;

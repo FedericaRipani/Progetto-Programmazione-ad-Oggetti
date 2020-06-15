@@ -44,7 +44,7 @@ public class Included extends AbstractFilter {
 			boolean approvato = true;
 
 			switch (getFields()) {
-			case "TextPost":
+			case "textPost":
 				if(equal) {
 					if(data.getTextPost().length()>lower || data.getTextPost().length()<upper) 	
 						approvato=false;

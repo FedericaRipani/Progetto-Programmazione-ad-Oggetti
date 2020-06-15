@@ -39,7 +39,7 @@ public class UpperBound extends AbstractFilter  {
 	
 	switch (getFields()) {
 	
-	case "TextPost":
+	case "textPost":
 		if(equal) {
 			if(data.getTextPost().length()>upper) 	
 				approvato=false;
