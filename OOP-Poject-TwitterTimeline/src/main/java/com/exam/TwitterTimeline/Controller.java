@@ -102,7 +102,7 @@ public class Controller {
 		val= filterService.getFlag();
 		
 		if(val==false)
-			return new ResponseEntity<String>("Nessun filtro selezionata/esistente", HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<String>("Il filtro selezionato non è esistente", HttpStatus.BAD_REQUEST);
 		
 		if (vett.size() == 0)
 			return new ResponseEntity<String>("La ricerca non ha prodotto risultati", HttpStatus.NOT_FOUND);
