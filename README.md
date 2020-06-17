@@ -147,9 +147,9 @@ I filtri disponibili e alcuni esempi di chiamata sono riportati nella seguente t
 | LowerBound and equal | Cerca i valori del campo scelto (**fields**) maggiori o uguali della soglia **lower**. |          Numerici          |    {"type":"LowerBoundE","field":"textPost","lower":40}     |
 |       Included       | Cerca i valori del campo scelto (**fields**)nei valori compresi tra la soglia **lower** e **upper**. |          Numerici          | {"type":"Included","fields":"textPost","lower":20,"upper":500} |
 |  Included and equal  | Cerca i valori del campo scelto (**fields**) nei valori compresi o uguali tra la soglia **lower** e **upper**. |          Numerici          | {"type":"IncludedE","fields":"numPost","lower":20,"upper":500} |
-|        Search        | Cerca le stringhe del campo scelto (**fields**) uguali ad una determinata parola (**value**) |          Stringhe          | {"type":"Search", "fields": "hashtag","value"= "terremoto"}  |
+|        Search        | Cerca le stringhe del campo scelto (**fields**) uguali ad una determinata parola (**value**) |          Stringhe          | {"type":"Search", "fields": "hashtag","value":"terremoto"}  |
 
-> I filtri di tipo numerico sono applicabili ai campi: `textPost` e `numPost`. In questo caso per il `TextPost` si fa riferimento alla sua lunghezza.
+> I filtri di tipo numerico sono applicabili ai campi: `textPost` e `numPost`. In questo caso per il `textPost` si fa riferimento alla sua lunghezza.
 
 > I filtri di tipo stringa sono applicabili ai campi: `textPost`, `nameUser` e `hashtag`.
 
@@ -241,13 +241,12 @@ La risposta è parziale perchè, per ragioni di spazio, ne è stata inserita sol
 
 Al fine di rendere il progetto di maggior comprensione per l'utente,  non sono state create eccezioni personalizzate, se non oltre a quelle già definite nelle apposite librerie, bensì sono stati utilizzati i seguenti codici HTTP- response:
 
-
-|   Codice Riposta    |           Chiamate possibili            |                         Significato                          |
-| :-----------------: | :-------------------------------------: | :----------------------------------------------------------: |
-|     `200 - OK`      | `getMeta, getTweets,  filtering, stats` | L'operazione è andata a buon fine, il risultato prodotto è quello aspettato. |
-| `400 - BAD REQUEST` |           `filtering, stats`            | Il filtro o il field immesso non è stato implementato oppure è incorretto. |
-| `204 - NO CONTENT`  |               `filtering`                | L'operazione è andata a buon fine ma non ha prodotto risultato, la selezione è vuota. |
-|  `404 - NOT FOUND`  |                  `stats`                 | Dopo aver richiesto le statistiche è stato immesso un filtro o un field incorretto. |
+|        Codice Riposta         |           Chiamate possibili            |                         Significato                          |
+| :---------------------------: | :-------------------------------------: | :----------------------------------------------------------: |
+|          `200 - OK`           | `getMeta, getTweets,  filtering, stats` | L'operazione è andata a buon fine, il risultato prodotto è quello aspettato. |
+|      `400 - BAD REQUEST`      |           `filtering, stats`            | Il filtro o il field immesso non è stato implementato oppure è incorretto. |
+|       `404 - NOT FOUND`       |  `filtering, stats,getMeta, getTweets`  | Nel caso del `filtering`, l'operazione è andata a buon fine ma non ha prodotto risultato, la selezione è vuota. Nel caso `stats`, è stato immesso un filtro o un field incorretto. Nel caso delle chiamate `get`, è stata effettuata una chiamata inesistente. |
+| `500 - INTERNAL SERVER ERROR` |           `filtering, stats`            | Dopo aver richiesto le statistiche è stato immesso un filtro o un field incorretto. |
 
 
 Il client invia la richiesta al server, quindi attende la risposta (response). Il compito del server è quello di interpretare la richiesta del client e restituire una risposta correlata da un codice ben visibile sull' applicazione di testing (ad esempio [Postman](https://www.postman.com/)) come mostra la seguente immagine.
@@ -271,11 +270,11 @@ Per il Class Diagram completo di metodi e relazioni, e per gli altri diagrammi U
 
 Successivamente alla fase di sviluppo del progetto sono stati creati dei test appositi, utilizzando JUnit5, per verificare la correttezza di alcuni metodi, eccezioni e HTTPStatuses.
 
-- `TestException` : Controlla la generazione di un' eccezione causata da un JSONObject errato;
+- `TestException` : Controlla la generazione di un' eccezione causata da un JSONObject errato.
 
-- `TestMetodsStats` : Controlla il risultato dato dalle funzioni che calcolano le statistiche;
+- `TestMetodsStats` : Controlla il risultato dato dalle funzioni che calcolano le statistiche.
 
-- `TestHttpStatuses` : Controlla che il codice Http generato sia corretto;
+- `TestHttpStatuses` : Controlla che il codice Http generato sia corretto.
 
 
 ---
