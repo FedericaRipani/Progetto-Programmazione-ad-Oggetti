@@ -87,7 +87,7 @@ public class Controller {
 	 * 
 	 * @param filter, è il filtro inserito in formato Json nella query string
 	 * @return L'Array filtrato in base alle richieste con codice HTTP 200
-	 * altrimenti codice HTTP 204 se la query è stata eseguita con successo 
+	 * altrimenti codice HTTP 404 se la query è stata eseguita con successo 
 	 * ma non ha prodotto risultati
 	 * altrimenti codice HTTP 400 se la query non è stata possibile eseguirla
 	 * ad esempio per una richiesta mal posta dal client
@@ -105,7 +105,7 @@ public class Controller {
 			return new ResponseEntity<String>("Nessun filtro selezionata/esistente", HttpStatus.BAD_REQUEST);
 		
 		if (vett.size() == 0)
-			return new ResponseEntity<String>("La ricerca non ha prodotto risultati", HttpStatus.NO_CONTENT);
+			return new ResponseEntity<String>("La ricerca non ha prodotto risultati", HttpStatus.NOT_FOUND);
 		else
 			return new ResponseEntity<ArrayList<Tweet>>(vett, HttpStatus.OK);
 		
