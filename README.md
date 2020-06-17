@@ -246,7 +246,7 @@ Al fine di rendere il progetto di maggior comprensione per l'utente,  non sono s
 |          `200 - OK`           | `getMeta, getTweets,  filtering, stats` | L'operazione è andata a buon fine, il risultato prodotto è quello aspettato. |
 |      `400 - BAD REQUEST`      |           `filtering, stats`            | Il filtro o il field immesso non è stato implementato oppure è incorretto. |
 |       `404 - NOT FOUND`       |  `filtering, stats,getMeta, getTweets`  | Nel caso del `filtering`, l'operazione è andata a buon fine ma non ha prodotto risultato, la selezione è vuota. Nel caso `stats`, è stato immesso un filtro o un field incorretto. Nel caso delle chiamate `get`, è stata effettuata una chiamata inesistente. |
-| `500 - INTERNAL SERVER ERROR` |           `filtering, stats`            | Dopo aver richiesto le statistiche è stato immesso un filtro o un field incorretto. |
+| `500 - INTERNAL SERVER ERROR` |           `filtering, stats`            | Errore generale che può verificarsi durante l’elaborazione della richiesta tramite il web server. L'errore specifico (es: JSONObject errato) viene descritto nel campo "message" |
 
 
 Il client invia la richiesta al server, quindi attende la risposta (response). Il compito del server è quello di interpretare la richiesta del client e restituire una risposta correlata da un codice ben visibile sull' applicazione di testing (ad esempio [Postman](https://www.postman.com/)) come mostra la seguente immagine.
